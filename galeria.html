@@ -17,9 +17,11 @@
 <body>
     <header>
         <div class="header">
-            <div class="header-logo" >
+          <div class="header-logo">
+            <a href="/index.html">
                 <img src="/img/maranda.png" alt="" style="width: 250px;">
-            </div>  
+            </a>
+          </div> 
         </div>    
     </header>
     <nav class="navbar navbar-expand-md">
@@ -68,66 +70,66 @@
     </p>
     <div class="row">
       <div class="col-md-3 col-sm-6 mb-4">
-        <div class="card h-100">
-          <img src="/img/cuadro1.jpeg" class="card-img-top" alt="Imagen 1">
+        <div class="card h-100 contenedor-img text-center">
+          <img src="/img/cuadro1.jpeg" class="card-img-top artwork" alt="Imagen 1">
           <div class="card-body">
-            <p class="card-text">Pintura 1</p>
+            <button type="button" class="btn btn-danger borrarBtn">X</button>
           </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 mb-4">
-        <div class="card h-100">
-          <img src="/img/cuadro2.jpeg" class="card-img-top" alt="Imagen 2">
+        <div class="card h-100 contenedor-img text-center">
+          <img src="/img/cuadro2.jpeg" class="card-img-top artwork" alt="Imagen 2">
           <div class="card-body">
-            <p class="card-text">Pintura 2</p>
+            <button type="button" class="btn btn-danger borrarBtn">X</button>
           </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 mb-4">
-        <div class="card h-100">
-          <img src="/img/cuadro3.jpeg" class="card-img-top" alt="Imagen 3">
+        <div class="card h-100 contenedor-img text-center">
+          <img src="/img/cuadro3.jpeg" class="card-img-top artwork" alt="Imagen 3">
           <div class="card-body">
-            <p class="card-text">Pintura 3</p>
+            <button type="button" class="btn btn-danger borrarBtn">X</button>
           </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 mb-4">
-        <div class="card h-100">
-          <img src="/img/cuadro4.jpeg" class="card-img-top" alt="Imagen 4">
+        <div class="card h-100 contenedor-img text-center">
+          <img src="/img/cuadro4.jpeg" class="card-img-top artwork" alt="Imagen 4">
           <div class="card-body">
-            <p class="card-text">Pintura 4</p>
+            <button type="button" class="btn btn-danger borrarBtn">X</button>
           </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 mb-4">
-        <div class="card h-100">
-          <img src="img/cuadro5.jpeg" class="card-img-top" alt="Imagen 1">
+        <div class="card h-100 contenedor-img text-center">
+          <img src="img/cuadro5.jpeg" class="card-img-top artwork" alt="Imagen 5">
           <div class="card-body">
-            <p class="card-text">Pintura 5</p>
+            <button type="button" class="btn btn-danger borrarBtn">X</button>
           </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 mb-4">
-        <div class="card h-100">
-          <img src="img/cuadro6.jpeg" class="card-img-top" alt="Imagen 1">
+        <div class="card h-100 contenedor-img text-center">
+          <img src="img/cuadro6.jpeg" class="card-img-top artwork" alt="Imagen 6">
           <div class="card-body">
-            <p class="card-text">Pintura 6</p>
+            <button type="button" class="btn btn-danger borrarBtn">X</button>
           </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 mb-4">
-        <div class="card h-100">
-          <img src="/img/cuadro7.jpeg" class="card-img-top" alt="Imagen 1">
+        <div class="card h-100 contenedor-img text-center">
+          <img src="/img/cuadro7.jpeg" class="card-img-top artwork" alt="Imagen 7">
           <div class="card-body">
-            <p class="card-text">Pintura 7</p>
+            <button type="button" class="btn btn-danger borrarBtn">X</button>
           </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 mb-4">
-        <div class="card h-100">
-          <img src="/img/cuadro8.jpeg" class="card-img-top" alt="Imagen 1">
+        <div class="card h-100 contenedor-img text-center">
+          <img src="/img/cuadro8.jpeg" class="card-img-top artwork" alt="Imagen 8">
           <div class="card-body">
-            <p class="card-text">Pintura 8</p>
+            <button type="button" class="btn btn-danger borrarBtn">X</button>
           </div>
         </div>
       </div>
@@ -158,7 +160,27 @@
     </div>
   </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- modal de info de imagen -->
+  <div class="modal" tabindex="-1" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Detalles de la imagen</h5>
+        </div>
+        <div class="modal-body">
+          <p id="textoimg"></p>
+          <img src="" class="card-img-top artwork" alt="" id="imgModal">
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="closeBtn" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="galeria.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
